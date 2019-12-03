@@ -1,0 +1,19 @@
+
+@mixin clearfix() {
+  &:after, &:before {
+    display: table;
+    content: ' ';
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin border($left, $right){
+    position: relative;
+    &:after {
+        position: absolute;
+
+    }
+}
